@@ -10,11 +10,12 @@ const navItems: { label: string; page?: string; link?: string }[] = [
   { label: 'Contact', page: '/contact' },
   {
     label: 'Source Code',
-    link: 'https://github.com/foxytanuki/notion-blog/blob/main/og_image.png',
+    link: 'https://github.com/foxytanuki/notion-blog',
   },
 ]
 
-const ogImageUrl = 'https://notion-blog.now.sh/og-image.png'
+const ogImageUrl =
+  'https://github.com/foxytanuki/notion-blog/blob/main/og_image.png'
 
 const Header = ({ titlePre = '' }) => {
   const { pathname } = useRouter()
