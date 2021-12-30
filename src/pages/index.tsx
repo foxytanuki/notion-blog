@@ -6,7 +6,7 @@ import sharedStyles from '../styles/shared.module.css'
 export default function Index() {
   return (
     <>
-      <Header titlePre="Home" />
+      <Header titlePre="" />
       <div className={sharedStyles.layout}>
         <img
           src="/vercel-and-notion.png"
