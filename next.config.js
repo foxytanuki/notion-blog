@@ -4,6 +4,7 @@ const {
   NOTION_TOKEN,
   BLOG_INDEX_ID,
 } = require('./src/lib/notion/server-constants')
+require('dotenv').config()
 
 try {
   fs.unlinkSync(path.resolve('.blog_index_data'))
@@ -56,5 +57,9 @@ module.exports = {
       return entries
     }
     return cfg
+  },
+  env: {
+    NOTION_TOKEN: process.env.NOTION_TOKEN,
+    BLOG_INDEX_ID: process.env.BLOG_INDEX_ID,
   },
 }
