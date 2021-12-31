@@ -96,6 +96,8 @@ const RenderPost = ({ post, redirect, preview }) => {
       children: React.ReactFragment
     }
   } = {}
+  const firstBlock = post.content[0]
+  const firstParagraph = firstBlock.value.properties.title[0][0]
 
   useEffect(() => {
     const twitterSrc = 'https://platform.twitter.com/widgets.js'
@@ -138,7 +140,11 @@ const RenderPost = ({ post, redirect, preview }) => {
 
   return (
     <>
-      <Header titlePre={post.Page} pageTitle={post.Page} />
+      <Header
+        titlePre={post.Page}
+        pageTitle={post.Page}
+        pageDesc={firstParagraph}
+      />
       {preview && (
         <div className={blogStyles.previewAlertContainer}>
           <div className={blogStyles.previewAlert}>

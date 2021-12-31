@@ -18,7 +18,7 @@ const ogImageUrl =
   'https://raw.githubusercontent.com/foxytanuki/notion-blog/main/public/og_image.png'
 const siteName = 'たぬきつね'
 
-const Header = ({ titlePre = '', pageTitle = '' }) => {
+const Header = ({ titlePre = '', pageTitle = '', pageDesc = '' }) => {
   const { pathname } = useRouter()
 
   return (
