@@ -31,6 +31,7 @@ const Header = ({ titlePre = '', pageTitle = '', pageDesc = '' }) => {
         <meta property="og:image" content={ogImageUrl} />
         <meta property="og:site_name" content={siteName} />
         <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDesc} />
         <meta property="og:type" content="article" />
         <meta name="twitter:site" content="@foxytanuki" />
         <meta name="twitter:card" content="summary_large_image" />
