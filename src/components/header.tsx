@@ -15,7 +15,7 @@ const navItems: { label: string; page?: string; link?: string }[] = [
 ]
 
 const ogImageUrl =
-  'https://github.com/foxytanuki/notion-blog/blob/main/public/og_image.png?raw=true'
+  'https://raw.githubusercontent.com/foxytanuki/notion-blog/main/public/og_image.png'
 
 const Header = ({ titlePre = '' }) => {
   const { pathname } = useRouter()
