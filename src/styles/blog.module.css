@@ -78,12 +78,12 @@
 }
 
 .post h1 {
-  margin-top: 0;
+  margin: 3rem 0 1.5rem 0;
 }
 
 .post :global(h2),
 .post :global(h3) {
-  margin: 3rem 0 1.5rem 0;
+  /* margin: 3rem 0 1.5rem 0; */
 }
 
 .post :global(video),
