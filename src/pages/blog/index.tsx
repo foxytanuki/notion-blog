@@ -12,6 +12,7 @@ import {
 import { textBlock } from '../../lib/notion/renderers'
 import getNotionUsers from '../../lib/notion/getNotionUsers'
 import getBlogIndex from '../../lib/notion/getBlogIndex'
+import { isWorker } from 'cluster'
 
 export async function getStaticProps({ preview }) {
   const postsTable = await getBlogIndex()
@@ -48,6 +49,12 @@ export async function getStaticProps({ preview }) {
 }
 
 const Index = ({ posts = [], preview }) => {
+  // Sort posts by date: newer -> older
+  posts.sort((first, second) => {
+    const isSecondNewer = second.Date > first.Date
+    return isSecondNewer ? 1 : -1
+  })
+
   return (
     <>
       <Header titlePre="Blog" />
