@@ -1,5 +1,4 @@
-# My Notion Blog
+# [Archived]
+The source code of my old blog created based on [ijjk/notion-blog](https://github.com/ijjk/notion-blog)
 
-This is the source code of my blog and created based on [ijjk/notion-blog](https://github.com/ijjk/notion-blog)
-
-[https://foxytanuki.dev](https://foxytanuki.dev)
+**Updated -> https://github.com/foxytanuki/notion-blog-v2**
